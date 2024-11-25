@@ -1,90 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <meta name="generator" content="Hugo 0.139.2">
-  <meta name="description" content="Welcome to Manpreet's personal site, built with Hugo and Contrast theme.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | Manpreet Site</title>
   <style>
-    /* General Styles */
+    /* CSS from your input */
+    @font-face {
+      font-family: "PT Sans";
+      src: local("PT Sans"), local("PTSans-Regular"), url("../fonts/PTSans-Regular.woff") format("woff");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: "PT Sans";
+      src: local("PT Sans Bold"), local("PTSans-Bold"), url("../fonts/PTSans-Bold.woff") format("woff");
+      font-weight: bold;
+      font-style: normal;
+    }
+
+    html {
+      background: #d3d4db;
+      font-size: 16px;
+      font-size: calc(0.8rem + 0.3vw);
+      padding: 0 calc(38% - 21em);
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
+      background: #ffffff;
+      color: #212228;
+      font-family: "PT Sans", -apple-system, "Helvetica Neue", "Segoe UI", "Roboto", sans-serif;
+      font-weight: 400;
       line-height: 1.6;
-      background-color: #f4f4f9;
-      color: #333;
+      margin: 0;
+      min-height: 100vh;
+      box-shadow: 0 0 0.3em #c5c7cf;
+      -webkit-text-size-adjust: 100%;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
-    header {
-      background: #333;
-      color: #fff;
-      padding: 10px 0;
-      text-align: center;
+    header a,
+    footer a,
+    aside a {
+      color: inherit;
     }
 
-    header .title {
-      font-size: 1.8rem;
-      color: #fff;
-      text-decoration: none;
+    body > header,
+    body > footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      background: #2d2e36;
+      color: #ffffff;
+    }
+
+    body > header,
+    body > article,
+    body > footer {
+      padding: 1.5em;
+    }
+
+    article header {
+      margin-bottom: 1.5em;
+    }
+
+    article header h1 {
+      font-size: 1.7em;
+      margin: 0 0 0.1em;
     }
 
     nav {
-      margin-top: 10px;
+      margin: 0.5em -1em;
     }
 
     nav a {
-      color: #ddd;
-      text-decoration: none;
-      margin: 0 10px;
-      font-size: 1rem;
+      margin: 0.5em 1em;
+      color: #68f;
+      text-decoration: inherit;
     }
 
     nav a:hover {
-      color: #fff;
-    }
-
-    article {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    article h1 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-
-    article time {
-      display: block;
-      font-size: 0.9rem;
-      color: #888;
-      margin-bottom: 20px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 10px 0;
-      background: #333;
-      color: #fff;
-      font-size: 0.9rem;
-      margin-top: 20px;
-    }
-
-    footer a {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    footer a:hover {
       text-decoration: underline;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    @media (min-width: 32em) {
+      body > header,
+      body > article,
+      body > footer {
+        padding: 1.65em calc(22% - 6em);
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      html,
+      body,
+      body > header,
+      body > footer {
+        background: #212228;
+        color: #ffffff;
+        box-shadow: 0 0 0 1px #33353e;
+      }
     }
   </style>
 </head>
+
 <body>
   <header>
     <a href="https://temp2.github.io/" class="title">Manpreet Site</a>
@@ -99,20 +126,15 @@
   <article>
     <header>
       <h1>About Me</h1>
-      <time datetime="2024-11-25T23:46:48+05:30">November 25, 2024</time>
     </header>
-    <p>Hello! I'm Manpreet, a passionate individual with a keen interest in technology, web development, and blogging. Welcome to my personal space on the web!</p>
-    <h2>Who I Am</h2>
     <p>
-      I enjoy exploring new technologies and sharing my experiences through this site. With a background in web development, I specialize in creating user-friendly and responsive websites.
+      Hello! I'm Manpreet, a tech enthusiast passionate about web development, blogging, and sharing knowledge. This site is my personal corner on the internet where I document my projects, thoughts, and experiences.
     </p>
-    <h2>What I Do</h2>
     <p>
-      Currently, I am working on various projects related to web development and personal blogging. Through my blog, I aim to share insights on technology, personal growth, and life lessons.
+      I have experience working on diverse web development projects, leveraging tools and frameworks to create responsive and accessible designs. My goal is to merge creativity and functionality in every project I undertake.
     </p>
-    <h2>Get in Touch</h2>
     <p>
-      Feel free to connect with me via the <a href="https://temp2.github.io/contact/index.html">Contact</a> page or explore more about my projects in the <a href="https://temp2.github.io/post/index.html">Blog</a> section.
+      In addition to technology, I enjoy writing and connecting with people through shared stories and ideas. If you'd like to collaborate or simply say hi, feel free to reach out through the <a href="https://temp2.github.io/contact/index.html">Contact</a> page!
     </p>
   </article>
 
@@ -120,4 +142,5 @@
     <p>&copy; 2024 Manpreet. All Rights Reserved. | <a href="https://temp2.github.io/">Home</a></p>
   </footer>
 </body>
+
 </html>
